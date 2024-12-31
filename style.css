@@ -21,6 +21,11 @@ body {
     background-color: blue;
 }
 
+.navbar {
+    grid-area: 2/2/3/3;
+    background-color: green;
+}
+
 .main {
     grid-area: 2/2/4/5;
     background-color: pink;
