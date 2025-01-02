@@ -6,28 +6,224 @@
 
 body {
     display: grid;
-    grid-template-columns: 1fr repeat(3, 2fr);
+    grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 1fr 5fr;
     height: 100vh
 }
 
-.sidebar {
-    grid-area: 1/1/4/2;
-    background-color: red;
+img {
+    height: 30px;
+    width: 30px;
 }
 
-.header {
-    grid-area: 1/2/2/5;
-    background-color: blue;
+/*Sidebar style */
+
+.sidebar {
+    grid-area: 1/1/4/2;
+    background-color: rgb(87, 95, 211);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
 }
+
+.logo-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.logo-top-left {
+    grid-area: 1/1/4/2;
+    background-color: white;
+}
+
+.logo-top-right {
+    grid-area: 1/2/3/3;
+    background-color: white;
+}
+
+.logo-bottom-left {
+    grid-area: 4/1/6/2;
+    background-color: white;
+}
+
+.logo-bottom-right {
+    grid-area: 3/2/6/3;
+    background-color: white;
+}
+
+.dashboard-main > div, .dashboard-settings > div, .dashboard-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Header style */
+
+.header {
+    grid-area: 1/2/2/3;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px 30px;
+    justify-content: space-between;
+}
+
+
+input {
+    padding: 1px 3px;
+    border-radius: 50px;
+    height: 30px;
+    border: none;
+    width: 600px;
+    background-color: rgb(218, 217, 217);
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+}
+
+.user {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Navabr style */
 
 .navbar {
     grid-area: 2/2/3/3;
-    background-color: green;
+    background-color: white;
+    padding: 5px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.pic-presentation {
+    height: 50px;
+    width: 50px;
+}
+
+.presentation {
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+
+button {
+    background-color: rgb(87, 95, 211);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 22px;
+}
+
+.button-navigation {
+    display: flex;
+    gap: 10px;
+}
+
+/* Main Style */
 
 .main {
-    grid-area: 2/2/4/5;
-    background-color: pink;
+    grid-area: 3/2/4/3;
+    background-color: rgb(218, 217, 217);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
+/* Cards */
+
+.projects-cards {
+    display: grid;
+    grid-area: 1/1/2/2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr repeat(3, 10fr);
+    gap: 20px; 
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: inset 10px 0 0px -5px orange
+}
+
+.button-cards {
+    align-self: end;
+    display: flex;
+    gap: 10px;
+}
+
+.super-cool-card {
+    grid-area: 2/1/3/2;
+}
+
+.impossible-card {
+    grid-area: 3/1/4/2;
+}
+
+.adblocker {
+    grid-area: 4/1/5/2;
+}
+
+.less-cool-card {
+    grid-area: 2/2/3/3;
+}
+
+.easy-peazy-card {
+    grid-area: 3/2/4/3;
+}
+
+.money-maker {
+    grid-area: 4/2/5/3;
+}
+
+/*Annoucement-trending */
+
+.announcement-trending {
+    grid-area: 1/2/3/3;
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr 10fr;
+    gap: 10px;
+}
+
+.announcement {
+    grid-area: 2/1/3/2;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.trending {
+    grid-area: 4/1/5/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.trending, .announcement {
+    padding: 10px ; 
+    background-color: white;
+    border-radius: 15px;
+}
+
+.trending {
+    padding: 10px 30px;
+}

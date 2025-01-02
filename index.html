@@ -9,19 +9,18 @@
 <body>
     <div class="sidebar">
 
-        <div class="dashboard_top">
+        <div class="dashboard-top">
             <div class="logo-container">
-                <div class="logo-item">Logo</div>
-                <div class="logo-item">Logo</div>
-                <div class="logo-item">Logo</div>
-                <div class="logo-item">Logo</div>
-                <div class="logo-item">Logo</div>
+                <div class="logo-top-left"></div>
+                <div class="logo-top-right"></div>
+                <div class="logo-bottom-left"></div>
+                <div class="logo-bottom-right"></div>
             </div>
-            <div>Dashboard</div>
+            <div><b>Dashboard</b></div>
         </div>
         
         
-        <div class="dashboard_main">
+        <div class="dashboard-main">
             <div><img src="home.svg" alt="Home logo">Home</div>
             <div><img src="card-account-details.svg" alt="Card account logo">Profile</div>
             <div><img src="message-reply.svg" alt="Message logo">Message</div>
@@ -29,7 +28,7 @@
             <div><img src="file-multiple.svg" alt="File logo">Tasks</div>
             <div><img src="account-supervisor.svg" alt="Account logo">Communities</div>
         </div>
-        <div class="dashboard_settings">
+        <div class="dashboard-settings">
             <div><img src="cog.svg" alt="Cog logo">Settings</div>
             <div><img src="help-box.svg" alt="Help box logo">Support</div>
             <div><img src="shield-check.svg" alt="Shield logo">Privacy</div>
@@ -37,49 +36,113 @@
     </div>
 
     <div class="header">
-        <img src="magnify.svg" alt="Magnify"><input type="text">
-        <img src="bell-ring-outline.svg" alt="Bell notification logo">
-        <img src="profile-pic.png" alt="profile pic">
-        <div>Morgan Oakley</div>
+        <div class="search">
+            <img src="magnify.svg" alt="Magnify" class="magnify"><input type="text">
+        </div>
+        <div class="user">
+            <img src="bell-ring-outline.svg" alt="Bell notification logo">
+            <img src="profile-pic.png" alt="profile pic">
+            <div><b>Morgan Oakley</b></div>
+        </div>
     </div>
 
     <div class="navbar">
-        <img src="profile-pic.png" alt="profile pic">
-        <div>Hi, there<br>Morgan Oakley (@morgan)</div>
-        <button>New</button><button>Upload</button><button>Share</button>
+        <div class="presentation">
+            <img src="profile-pic.png" alt="profile pic" class="pic-presentation">
+            <div><b>Hi, there<br>Morgan Oakley (@morgan)</b></div>
+        </div>
+        <div class="button-navigation">
+            <button type="button">New</button><button type="button">Upload</button><button type="button">Share</button>
+        </div>
     </div>
 
     <div class="main">
         <div class="projects-cards">
-            <div class="card">Super Cool Project<br>Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim 
+            <b>Your projects</b>
+            <div class="card super-cool-card">
+                <div>
+                    <b>Super Cool Project</b><br>Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim 
                 est eleifend mi, non fermentum diam nisl sit amet erat.
-                <div><img src="star-plus-outline.svg" alt="Star plus logo"><img src="eye-plus-outline.svg" alt="Eye plus logo"><img src="source-branch.svg" alt="Source logo"></div>
+                </div>
+                <div class="button-cards"><img src="star-plus-outline.svg" alt="Star plus logo"><img src="eye-plus-outline.svg" alt="Eye plus logo"><img src="source-branch.svg" alt="Source logo"></div>
             </div>
-            <div class="card">Impossible App<br>Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim 
+            <div class="card impossible-card">
+                <div>
+                    <b>Impossible App</b><br>Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim 
                 est eleifend mi, non fermentum diam nisl sit amet erat.
-                <div><img src="star-plus-outline.svg" alt="Star plus logo"><img src="eye-plus-outline.svg" alt="Eye plus logo"><img src="source-branch.svg" alt="Source logo"></div>
+                </div>
+                <div class="button-cards"><img src="star-plus-outline.svg" alt="Star plus logo"><img src="eye-plus-outline.svg" alt="Eye plus logo"><img src="source-branch.svg" alt="Source logo"></div>
             </div>
-            <div class="card">Ad blocker<br>Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim 
+            <div class="card adblocker">
+                <div>
+                    <b>Ad blocker</b><br>Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim 
                 est eleifend mi, non fermentum diam nisl sit amet erat.
-                <div><img src="star-plus-outline.svg" alt="Star plus logo"><img src="eye-plus-outline.svg" alt="Eye plus logo"><img src="source-branch.svg" alt="Source logo"></div>
+                </div>
+                <div class="button-cards"><img src="star-plus-outline.svg" alt="Star plus logo"><img src="eye-plus-outline.svg" alt="Eye plus logo"><img src="source-branch.svg" alt="Source logo"></div>
             </div>
-            <div class="card">Less Cool Project<br>Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim 
+            <div class="card less-cool-card">
+                <div>
+                    <b>Less Cool Project</b><br>Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim 
                 est eleifend mi, non fermentum diam nisl sit amet erat.
-                <div><img src="star-plus-outline.svg" alt="Star plus logo"><img src="eye-plus-outline.svg" alt="Eye plus logo"><img src="source-branch.svg" alt="Source logo"></div>
+                </div>
+                <div class="button-cards"><img src="star-plus-outline.svg" alt="Star plus logo"><img src="eye-plus-outline.svg" alt="Eye plus logo"><img src="source-branch.svg" alt="Source logo"></div>
             </div>
-            <div class="card">Easy Peasy App<br>Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim 
+            <div class="card easy-peazy-card">
+                <div>
+                    <b>Easy Peasy App</b><br>Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim 
                 est eleifend mi, non fermentum diam nisl sit amet erat.
-                <div><img src="star-plus-outline.svg" alt="Star plus logo"><img src="eye-plus-outline.svg" alt="Eye plus logo"><img src="source-branch.svg" alt="Source logo"></div>
+                </div>
+                <div class="button-cards"><img src="star-plus-outline.svg" alt="Star plus logo"><img src="eye-plus-outline.svg" alt="Eye plus logo"><img src="source-branch.svg" alt="Source logo"></div>
             </div>
-            <div class="card">Money Maker<br>Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim 
+            <div class="card money-maker">
+                <div>
+                    <b>Money Maker</b><br>Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim 
                 est eleifend mi, non fermentum diam nisl sit amet erat.
-                <div><img src="star-plus-outline.svg" alt="Star plus logo"><img src="eye-plus-outline.svg" alt="Eye plus logo"><img src="source-branch.svg" alt="Source logo"></div>
+                </div>
+                <div class="button-cards"><img src="star-plus-outline.svg" alt="Star plus logo"><img src="eye-plus-outline.svg" alt="Eye plus logo"><img src="source-branch.svg" alt="Source logo"></div>
             </div>
         </div>
         <div class="announcement-trending">
+            <div><b>Announcements</b></div>
             <div class="announcement">
-                Annoucements
-                <div class="annoucement-section"></div>
+                
+                <div class="maintenance">
+                    <b>Site Maintenance</b><br>
+                    Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim 
+                    est eleifend mi, non fermentum diam nisl sit amet erat.
+                </div>
+                <div class="share-day">
+                    <b>Community Share Day</b><br>
+                    Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim 
+                    est eleifend mi, non fermentum diam nisl sit amet erat.
+                </div>
+                <div class="policy">
+                    <b>Updated Privacy Policy</b><br>
+                    Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim 
+                    est eleifend mi, non fermentum diam nisl sit amet erat.
+                </div>
+                
+            </div>
+            <div><b>Trendings</b></div>
+            <div class="trending">
+                
+                <div class="user">
+                    <img src="profile-pic.png" alt="profile pic user 1">
+                    <div><b>@User1</b><br>I'm user1</div>
+                </div>
+                <div class="user">
+                    <img src="profile-pic.png" alt="profile pic user 1">
+                    <div><b>@User2</b><br>I'm user2</div>
+                </div>
+                <div class="user">
+                    <img src="profile-pic.png" alt="profile pic user 1">
+                    <div><b>@User3</b><br>I'm user3</div>
+                </div>
+                <div class="user">
+                    <img src="profile-pic.png" alt="profile pic user 1">
+                    <div><b>@User4</b><br>I'm user4</div>
+                </div>
+                
             </div>
         </div>
     </div>
